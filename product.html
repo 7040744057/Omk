@@ -3,100 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OM LES – Wear Your Style</title>
+  <title>OM LES – Premium Fashion</title>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    * {
       margin: 0;
-      background: #fff;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f6f2;
       color: #222;
     }
+
     header {
-      text-align: center;
-      padding: 20px;
       background: #000;
       color: #fff;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: 2px;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 30px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .product {
-      background: #f8f8f8;
-      border-radius: 16px;
       text-align: center;
-      padding: 20px;
-      transition: 0.3s;
+      padding: 25px 10px;
+      font-size: 30px;
+      letter-spacing: 3px;
+      font-weight: 700;
     }
-    .product:hover {
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transform: translateY(-5px);
-    }
-    .product img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-    .product h3 {
-      margin: 15px 0 5px;
-      font-size: 20px;
-    }
-    .price {
-      font-size: 18px;
-      font-weight: bold;
+
+    header span {
       color: #e63b7a;
     }
+
+    .tagline {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 8px;
+      color: #444;
+      font-style: italic;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .product img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #e63b7a;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
     button {
-      margin-top: 10px;
       padding: 10px 25px;
       background: #000;
       color: #fff;
       border: none;
-      border-radius: 8px;
+      border-radius: 25px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 15px;
+      transition: background 0.3s ease;
     }
+
     button:hover {
       background: #e63b7a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #000;
+      color: #fff;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
-<header>OM LES – Wear Your Style</header>
+  <header>OM <span>LES</span></header>
+  <p class="tagline">Wear Your Style • Premium Fashion Collection</p>
 
-<section class="container">
+  <section class="container">
 
-  <div class="product">
-    <img src="tshirt.jpg" alt="OM LES T-shirt" />
-    <h3>Stylish T-Shirt</h3>
-    <p class="price">₹500</p>
-    <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
-  </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="T-shirt">
+      <div class="product-content">
+        <h3>Stylish T-Shirt</h3>
+        <p class="price">₹500</p>
+        <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="jeans.jpg" alt="OM LES Jeans" />
-    <h3>Classic Jeans</h3>
-    <p class="price">₹500</p>
-    <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
-  </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Jeans">
+      <div class="product-content">
+        <h3>Classic Jeans</h3>
+        <p class="price">₹500</p>
+        <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
+      </div>
+    </div>
 
-  <div class="product">
-    <img src="hoodie.jpg" alt="OM LES Hoodie" />
-    <h3>Cozy Hoodie</h3>
-    <p class="price">₹500</p>
-    <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
-  </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" alt="Hoodie">
+      <div class="product-content">
+        <h3>Cozy Hoodie</h3>
+        <p class="price">₹500</p>
+        <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
+      </div>
+    </div>
 
-</section>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1593032465171-8b7c46c98b8a?auto=format&fit=crop&w=800&q=80" alt="Cap">
+      <div class="product-content">
+        <h3>Trendy Cap</h3>
+        <p class="price">₹500</p>
+        <button onclick="alert('Thank you for choosing OM LES!')">Buy Now</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>© 2025 OM LES | Designed with ❤️ by Nitesh</footer>
 
 </body>
 </html>
